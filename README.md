@@ -1,72 +1,85 @@
-# Atm-Management-System
-![image](https://github.com/user-attachments/assets/1fed4b29-9a9e-4219-ad34-8b7c42861db0)
-![image](https://github.com/user-attachments/assets/9ead084b-d970-49d9-9df1-580b75b6bc55)
+**💳 ATM Management System – Java Spring Boot REST API**
+📸 Preview
+![image](https://github.com/user-attachments/assets/4e93c7a8-266f-487f-812d-4dd8f5631d25)
 
-Java Spring Boot Rest API ATM Project
-The application simulates the usage of an ATM via REST API calls. It aims to provide the user with bank operations and to keep a record of customer transactions in a database.
+![image](https://github.com/user-attachments/assets/9279603d-6881-4bb6-8846-e9eb2a20c101)
 
-Functionality
-User
+📋 Overview
+This project simulates an ATM machine using a Java Spring Boot REST API. It allows users to interact with a virtual bank system by performing various financial operations and maintaining a transaction history in a database.
 
-Deposit
+✅ Core Functionalities
+👤 User Operations
+* Register a user
 
-Withdraw
+* Deposit money
 
-Transfer (to another bank user)
+* Withdraw money
 
-Bank account details
+* Transfer funds to another user
 
-Bank statement for a certain date
+* Check account balance
 
-Close bank account
+* Get account details
 
-Bank
+* View bank statement (transactions) for a certain date
 
-Bank users
+* Close/delete bank account
 
-Transactions
+🏦 Bank Admin Operations
+* List all bank users
 
-Accounts
+* List all transactions
 
-Bank balance
+* List all accounts
 
-Show user with most transactions
+* View total bank balance
 
-Show user with highest balance
+Show user with:
 
-Transactions occured between two given dates
+* Most transactions
 
-Find the date with most transactions
+* Highest balance
 
-Observation: In order for the application flow to run correctly, register the users first.
+* Filter transactions between two dates
 
-Running App
-Build the project following the ./gradlew build command.
+* Find the date with the most transactions
 
-You can run the application (a REST server) in your IDE by running class AtmApplication as Java Application or on the command line gradle wrapper run.
+⚠️ Important Notes
+Register users before creating accounts or performing transactions to ensure smooth functionality.
 
-Documentation
-The documentation for each ATM endpoint was done via Swagger springdoc-openapi and it can be found after running the application at the following url http://localhost:8080/swagger-ui.html
+▶️ Running the Application
+🛠 Build
+bash
+Copy
+Edit
+./gradlew build
+🚀 Run
+In IDE: Run AtmApplication.java as a Java Application
 
-Technology
-Java 17
+From CLI:
 
-Spring Boot (3.0.1)
+bash
+Copy
+Edit
+./gradlew bootRun
+📑 API Documentation
+Accessible after running the app at:
 
-Hibernate
+bash
+Copy
+Edit
+http://localhost:8080/swagger-ui.html
+Powered by Springdoc OpenAPI (Swagger UI)
 
-Spring Data JPA
-
-Lombok
-
-Unit test: Junit 5 + Mockito
-
-Documentation: Swagger springdoc-openapi
-
-Endpoints testing: Postman
-
-Build Tool: Maveen
-
-Database: Oracel
-
-IDE: STS
+🧰 Technology Stack
+Category	Tools / Frameworks
+* Language	Java 17
+* Framework	Spring Boot 3.0.1
+* ORM	Hibernate, Spring Data JPA
+* Testing	JUnit 5, Mockito
+* Documentation	Swagger (springdoc-openapi)
+* Database	Oracle
+* Build Tool	Maven
+* API Testing	Postman
+* IDE	Spring Tool Suite (STS)
+* Code Generation	Lombok
