@@ -8,6 +8,7 @@ class AtmmSystemApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }
